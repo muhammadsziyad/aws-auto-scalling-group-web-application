@@ -88,9 +88,9 @@ In this guide, we'll deploy a simple web application on AWS EC2 instances, confi
    cd my-app
    npm init -y
    npm install express
-```
+	```
 
-	**Example `index.js`**:
+**Example `index.js`**:
 
 ```Node
 const express = require('express');
