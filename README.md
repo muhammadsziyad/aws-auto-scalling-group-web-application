@@ -1,5 +1,22 @@
 # Web Application on AWS using an Auto Scaling Group
 
+```mermaid
+flowchart LR
+    A[User] -->|Accesses Web Application| B[Load Balancer]
+    B -->|Distributes Traffic| C[Auto Scaling Group]
+    C -->|Manages| D[EC2 Instances]
+    D -->|Hosts| E[Web Application]
+    C -->|Monitored by| F[AWS CloudWatch]
+
+    subgraph Auto Scaling Workflow
+        B
+        C
+        D
+        E
+    end
+
+```
+
 This guide demonstrates how to deploy a web application on AWS using an Auto Scaling Group. It covers the prerequisites, overview of the deployment, and step-by-step instructions to set up the infrastructure.
 
 ## Overview
